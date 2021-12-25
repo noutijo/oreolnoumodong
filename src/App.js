@@ -4,7 +4,9 @@ function App() {
 
   return (
     <>
-      starting...
+      <div className="container text-center">
+        starting here... bro !
+      </div>
     </>
   );
 }
