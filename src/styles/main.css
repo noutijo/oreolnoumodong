@@ -1,0 +1,43 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1E2331;
+  color: #D4DAEC;
+  font-family: Karla, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 382px;
+  top: -300px;
+  background: linear-gradient(160deg, rgba(30, 35, 49, 0.5) 19.27%, #3a445f 74.24%);
+  border-radius: 200px;
+  -webkit-transform: rotate(-36deg);
+          transform: rotate(-36deg);
+  z-index: -1;
+  left: 100px;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 382px;
+  top: 100px;
+  background: linear-gradient(160deg, rgba(30, 35, 49, 0.5) 19.27%, #3a445f 74.24%);
+  border-radius: 200px;
+  -webkit-transform: rotate(-36deg);
+          transform: rotate(-36deg);
+  z-index: -1;
+  right: -350px;
+}
+/*# sourceMappingURL=main.css.map */

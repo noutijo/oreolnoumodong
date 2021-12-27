@@ -1,0 +1,41 @@
+@import "settings";
+
+*{
+    box-sizing: border-box;
+}
+
+@mixin setupForm($mt) {
+position: fixed;
+width: 600px;
+height: 382px; 
+top: $mt;
+background: linear-gradient(160deg, rgba(30, 35, 49, 0.5) 19.27%, #3a445f 74.24%);
+border-radius: 200px; 
+transform: rotate(-36deg); 
+z-index:-1;  
+} 
+
+body{
+background-color: $maincolor; 
+color: $textcolor; 
+font-family: $myFont;
+font-size: $fontsize18px;
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+
+&::before{
+content: "";
+@include setupForm(-300px);
+left: 100px;
+} 
+
+&::after{
+content: "";
+@include setupForm(100px);
+right: -350px;
+}
+} 
+
+
+
