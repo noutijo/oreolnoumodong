@@ -1,13 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+/*font setup*/
+.fontSize14 {
+  font-size: 14px;
+}
+
+.fontSize16 {
+  font-size: 16px;
+}
+
+.fontSize20 {
+  font-size: 20px;
+}
+
+.fontSize24 {
+  font-size: 24px;
+}
+
+.fontSize27 {
+  font-size: 27px;
+}
+
+.fontWeight200 {
+  font-weight: 200;
+}
+
+.fontWeight300 {
+  font-weight: 300;
+}
+
+.fontWeight400 {
+  font-weight: 400;
+}
+
+.fontWeight500 {
+  font-weight: 500;
+}
+
+.fontWeight600 {
+  font-weight: 600;
+}
+
+.fontWeight700 {
+  font-weight: 700;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.green-color {
+  color: #18967F;
+}
+
+.white-color {
+  color: white;
+}
+
+.center-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.circle100 {
+  border-radius: 100px;
+}
+
+.bg-gradient {
+  background: linear-gradient(143.49deg, #ced4e7 6.23%, #8994b4 61.97%);
+}
+
 body {
   background-color: #1E2331;
   color: #D4DAEC;
-  font-family: Karla, Roboto, Helvetica, sans-serif;
-  font-size: 18px;
+  font-family: Karla, sans-serif;
+  font-size: 16px;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -39,5 +120,20 @@ body::after {
           transform: rotate(-36deg);
   z-index: -1;
   right: -350px;
+}
+
+/*snack bar */
+#root > div > div.MuiSnackbar-root.MuiSnackbar-anchorOriginBottomLeft.css-cpgvjg-MuiSnackbar-root > div {
+  background-color: #293041;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: Karla, sans-serif;
+}
+
+a:hover {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

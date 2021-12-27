@@ -1,16 +1,18 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import Me from "./Me";
+import SnackBar from "./SnackBar";
 
 function App() {
- 
+
   return (
     <>
-      
-        <Container maxWidth="sm">
-         
-          hello guys, Merry Christmas hello guys, Merry Christmashello guys, Merry Christmas !
-        </Container>
+
+      <Container maxWidth="sm">
+        <Me />
+        <SnackBar />
+      </Container>
     </>
   );
 }
