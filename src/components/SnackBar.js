@@ -21,14 +21,14 @@ function SnackBar() {
 
     const message = (
         <>
-            <Box sx={{ flexGrow: 1 }}>
+            <Box style={{ width: "300px" }} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={10} >
                         <Link href="https://twitter.com/JuniorOreol" target="_blank">
                             <img style={{ with: "22px", height: "16px" }} src={twitter} alt="twitter icon" /> <span className="fontWeight600 white-color">@JuniorOreol</span>
                     </Link>
                     </Grid>
-                    <Grid style={{ marginRight: "0px", paddingRight: "0px"}} item xs={2}>
+                    <Grid item xs={2}>
                         <IconButton
                             size="small"
                             aria-label="close"
@@ -50,7 +50,6 @@ function SnackBar() {
         <>
             <Snackbar
                 className="animate__animated animate__slideInDown"
-                style={{ width: "320px"}}
                 open={open}
                 autoHideDuration={6000}
                 message={message}
