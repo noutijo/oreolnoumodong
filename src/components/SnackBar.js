@@ -4,6 +4,8 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Link from '@mui/material/Link';
+
 import twitter from "../images/twitter.svg";
 
 function SnackBar() {
@@ -22,9 +24,9 @@ function SnackBar() {
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={10} >
-                        <a className="fontWeight600" href="https://twitter.com/JuniorOreol" target="_blank">
-                    <img style={{with:"22px",height:"16px"}} src={twitter} alt="twitter icon" /> @JuniorOreol
-                    </a>
+                        <Link href="https://twitter.com/JuniorOreol" target="_blank">
+                            <img style={{ with: "22px", height: "16px" }} src={twitter} alt="twitter icon" /> <span className="fontWeight600 white-color">@JuniorOreol</span>
+                    </Link>
                     </Grid>
                     <Grid style={{ marginRight: "0px", paddingRight: "0px"}} item xs={2}>
                         <IconButton

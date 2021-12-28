@@ -63,6 +63,13 @@ color:white;
             height: auto;
           box-sizing: border-box;
 }
+.center-content-left{
+     display: flex;
+          align-items: center;
+          justify-content: left;
+            height: auto;
+          box-sizing: border-box;
+}
 
 .circle100{
     border-radius: 100px;
