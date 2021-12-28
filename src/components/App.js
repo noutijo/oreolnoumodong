@@ -8,16 +8,15 @@ import SnackBar from "./SnackBar";
 function App() {
 
   return (
-    <>
+    <div className="center-content">
 
+      <Menu />
       <Container maxWidth="sm">
-        <Menu />
         <Me />
         <SnackBar />
       </Container>
-      
-      
-    </>
+
+    </div>
   );
 }
 export default App;

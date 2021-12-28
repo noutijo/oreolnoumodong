@@ -153,8 +153,14 @@ body::after {
 }
 
 /*snack bar */
-#root > div > div.MuiSnackbar-root.MuiSnackbar-anchorOriginBottomLeft.css-cpgvjg-MuiSnackbar-root > div {
-  background-color: #293041;
+#root
+> div
+> div:nth-child(2)
+> div.MuiSnackbar-root.MuiSnackbar-anchorOriginBottomLeft.animate__animated.animate__slideInDown.css-cpgvjg-MuiSnackbar-root
+> div {
+  background: rgba(41, 48, 65, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 a {
@@ -168,14 +174,16 @@ a:hover {
 }
 
 /*Menu*/
+.position-menu {
+  position: fixed;
+  top: 10px;
+  z-index: 100;
+}
+
 .bg-menu {
   background: rgba(41, 48, 65, 0.5);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   border-radius: 1rem;
-  /*position: fixed;
-top:0px;*/
-  margin-top: 10px;
-  z-index: 100;
 }
 /*# sourceMappingURL=main.css.map */

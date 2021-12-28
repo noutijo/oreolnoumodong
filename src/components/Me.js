@@ -48,9 +48,9 @@ function Me() {
 
     return (
         <>
-            <Box mt={10} sx={{ flexGrow: 1 }}>
+            <Box mt={15} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={1}>
-                    <Grid style={{ display: "inherit", paddingLeft: "0px"}} item xs={12} >
+                    <Grid style={{ display: "inherit" }} item xs={12} >
                         <Stack className="center-content circle100 bg-gradient" sx={{ width: 80, height: 80 }} direction="row" spacing={2}>
                             <Tooltip title="Available" placement="bottom-start">
                                 <StyledBadge
@@ -74,18 +74,19 @@ function Me() {
                             </div>
                         </Grid>
                     </Grid>
-                    <Grid mt={2} xs={12} className="enter-content-left">
-                        
+                    <Grid mt={2} item xs={12}>
+
                         <p className="fontWeight300 fontSize16 text-justify">
                             Welcome, I’m Software engineer, Front-end developer (ReactJs), Ui/Ux designer  who received a training grant from <Link href="http://meta.com/" target="_blank"><span className="fontWeight600 white-color">@Meta</span></Link> for front-end web development training at <Link href="https://openclassrooms.com/" target="_blank"><span className="fontWeight600 white-color">@OpenClassrooms</span></Link>. <Link href="https://twitter.com/nooutidev" target="_blank"><span className="fontWeight600 green-color">@nooutidev</span></Link> Founder.
-                            </p>
+                        </p>
                     </Grid>
-                    <Grid xs={12} className="enter-content-left">
-                        
-                        <Link href="https://github.com/noutijo" target="_blank"><img style={{ with: "23px", height: "17px" }} src={github} alt="github icon" /></Link> 
-                        <Link ml={1.5} href="https://gitlab.com/oreolnoumodong" target="_blank"><img style={{ with: "22px", height: "16px" }} src={gitlab} alt="gitlab icon" /></Link> 
-                        <Link ml={1.5} href="https://twitter.com/JuniorOreol" target="_blank"><img style={{ with: "22px", height: "16px" }} src={twitter} alt="twitter icon" /></Link> 
-                        <Link ml={1.5} href="https://www.linkedin.com/in/oreolnoumodong/" target="_blank"><img style={{ with: "27px", height: "21px" }} src={linkedin} alt="linkedin icon" /></Link> 
+                    <Grid item xs={12}>
+                    <p>
+                        <Link href="https://github.com/noutijo" target="_blank"><img style={{ with: "23px", height: "17px" }} src={github} alt="github icon" /></Link>
+                        <Link ml={1.5} href="https://gitlab.com/oreolnoumodong" target="_blank"><img style={{ with: "22px", height: "16px" }} src={gitlab} alt="gitlab icon" /></Link>
+                        <Link ml={1.5} href="https://twitter.com/JuniorOreol" target="_blank"><img style={{ with: "22px", height: "16px" }} src={twitter} alt="twitter icon" /></Link>
+                        <Link ml={1.5} href="https://www.linkedin.com/in/oreolnoumodong/" target="_blank"><img style={{ with: "27px", height: "21px" }} src={linkedin} alt="linkedin icon" /></Link>
+                    </p>
                     </Grid>
                 </Grid>
             </Box>
