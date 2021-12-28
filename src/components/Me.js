@@ -48,7 +48,7 @@ function Me() {
 
     return (
         <>
-            <Box mt={20} sx={{ flexGrow: 1 }}>
+            <Box mt={10} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={1}>
                     <Grid style={{ display: "inherit", paddingLeft: "0px"}} item xs={12} >
                         <Stack className="center-content circle100 bg-gradient" sx={{ width: 80, height: 80 }} direction="row" spacing={2}>

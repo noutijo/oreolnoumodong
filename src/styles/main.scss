@@ -56,19 +56,23 @@ color:$greencolor;
 color:white;
 } 
 
+@mixin centerSetup(){
+    display: flex;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+}
 .center-content{
-     display: flex;
-          align-items: center;
-          justify-content: center;
-            height: auto;
-          box-sizing: border-box;
+@include centerSetup;
+justify-content: center;
 }
 .center-content-left{
-     display: flex;
-          align-items: center;
-          justify-content: left;
-            height: auto;
-          box-sizing: border-box;
+@include centerSetup;
+justify-content: left;
+}
+.center-content-right{
+@include centerSetup;
+justify-content: right;
 }
 
 .circle100{
@@ -128,7 +132,16 @@ a{
 }
 
 
-
+/*Menu*/
+.bg-menu{
+background: $secondcolorrgba;
+backdrop-filter: blur(8px);
+border-radius: 1rem;
+/*position: fixed;
+top:0px;*/
+margin-top:10px;
+z-index: 100;   
+}
 
 
 
