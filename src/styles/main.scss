@@ -120,17 +120,6 @@ body {
   }
 }
 
-/*snack bar */
-
-#root
-  > div
-  > div:nth-child(2)
-  > div.MuiSnackbar-root.MuiSnackbar-anchorOriginBottomLeft.animate__animated.animate__slideInDown.css-cpgvjg-MuiSnackbar-root
-  > div {
-  background: $secondcolorrgba;
-  backdrop-filter: blur(8px);
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -140,16 +129,6 @@ a {
   }
 }
 
-/*Menu*/
-
-.position-menu {
-  position: fixed; 
-  top: 10px;
-  z-index: 100;
-}
-
-.bg-menu { 
-  background: $secondcolorrgba;
-  backdrop-filter: blur(8px);
-  border-radius: 1rem;
-}
+@import "menu";
+@import "snackbar";
+@import "skills"; 

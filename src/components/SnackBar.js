@@ -39,7 +39,7 @@ function SnackBar() {
                         </IconButton>
                     </Grid>
                     <Grid item xs={12}>
-                        <p className="text-justify fontWeight300">I’m currently studying Back-end technologies ( MongoDB, Node.js and Express.js).</p>
+                        <p className="text-justify fontWeight300">I am currently improving my knowledge on back-end technologies (MongoDB, Node.js and Express.js).</p>
                     </Grid>
                 </Grid>
             </Box>
