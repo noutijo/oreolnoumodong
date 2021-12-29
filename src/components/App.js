@@ -2,9 +2,11 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Me from "./Me";
-import Skills from "./Skills";
 import Menu from "./Menu";
 import SnackBar from "./SnackBar";
+import Skills from "./Skills";
+import Services from "./Services";
+import Projets from "./Projets";
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <Container maxWidth="sm">
         <Me />
         <Skills />
+        <Services />
+        <Projets />
 
       </Container>
       <SnackBar />

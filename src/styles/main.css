@@ -5,12 +5,20 @@
 }
 
 /*font setup*/
-.fontSize14 {
+.fontSize12 {
+  font-size: 12px;
+}
+
+.fontSize14, .bg-second-percent {
   font-size: 14px;
 }
 
 .fontSize16 {
   font-size: 16px;
+}
+
+.fontSize18 {
+  font-size: 18px;
 }
 
 .fontSize20 {
@@ -55,6 +63,10 @@
 
 .green-color {
   color: #18967F;
+}
+
+.text-color {
+  color: #D4DAEC;
 }
 
 .white-color {
@@ -181,5 +193,29 @@ a:hover {
   background: rgba(41, 48, 65, 0.5);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+}
+
+.bg-color-card {
+  background-color: #293041 !important;
+}
+
+.bg-main-percent {
+  background-color: #4c5261;
+  border-radius: 20px;
+  height: 14px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.bg-second-percent {
+  background-color: #18967F;
+  height: 14px;
+  border-radius: 20px 0px 0px 20px;
+  color: #D4DAEC;
+}
+
+.margin-content-percent {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 /*# sourceMappingURL=main.css.map */

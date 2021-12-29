@@ -49,7 +49,7 @@ function SnackBar() {
     return (
         <>
             <Snackbar
-                className="animate__animated animate__slideInDown"
+                className="animate__animated animate__slideInDown bg-snackbar"
                 open={open}
                 autoHideDuration={6000}
                 message={message}

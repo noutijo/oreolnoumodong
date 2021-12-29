@@ -12,11 +12,17 @@
   font-weight: $s;
 }
 
+.fontSize12 {
+  @include setupFontSize(12px);
+}
 .fontSize14 {
   @include setupFontSize(14px);
 }
 .fontSize16 {
   @include setupFontSize(16px);
+}
+.fontSize18 {
+  @include setupFontSize(18px);
 }
 .fontSize20 {
   @include setupFontSize(20px);
@@ -52,6 +58,9 @@
 .green-color {
   color: $greencolor;
 }
+.text-color {
+  color: $textcolor;
+} 
 .white-color {
   color: white;
 }
@@ -110,7 +119,7 @@ body {
   &::before {
     content: "";
     @include setupForm(-300px);
-    left: 100px;
+    left: 100px;  
   }
 
   &::after {

@@ -1,0 +1,24 @@
+.bg-color-card{
+    background-color:$secondcolor !important;
+}
+
+.bg-main-percent{
+    background-color:$thirdcolor;
+    border-radius: 20px;
+     height: 14px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.bg-second-percent{
+    background-color:$greencolor; 
+    height: 14px;
+    border-radius: 20px 0px 0px 20px;
+    color: $textcolor;
+    @extend .fontSize14;
+}
+
+.margin-content-percent{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
