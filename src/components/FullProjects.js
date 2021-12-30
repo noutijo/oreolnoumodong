@@ -51,7 +51,7 @@ export default function FullProjects() {
         title: "noutijo",
         desc: "noutijo is my own portfolio built from scratch with a custom design.",
         link: "http://noutijo.github.io/",
-        tags: ["reactjs", "html_css"]
+        tags: ["reactjs", "javascript", "html_css"]
     }
 
     ];

@@ -39,7 +39,7 @@ export default function FullSkills() {
     {
         percent: "62%",
         icon: `${java}`,
-        text: "Java + javafs"
+        text: "Java + javafx"
     }
         ,
     {
