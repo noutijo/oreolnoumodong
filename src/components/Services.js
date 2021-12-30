@@ -15,13 +15,13 @@ export default function Services() {
     const servicesar = [{
         icon: `${applicationweb}`,
         title: "Web Development",
-        text: "Using Javascript, ReactJs, Webpack, Babel, Bootstrap, jQuery, HMTL5, CSS3, I can build your websites and web application user interfaces to look beautiful and responsive on all platforms."
+        text: "Using Javascript, ReactJs, Webpack, Babel, Bootstrap, MUI, jQuery, HMTL5, CSS3, I can build your websites and web application user interfaces to look beautiful and responsive on all platforms."
     }
         ,
     {
         icon: `${applicationdesktop}`,
         title: "Desktop Application Dev",
-        text: "My expertise in Java enables me to build desktop applications.For more low level desktop application requirements, I use Java's UI framework, JavaFX, to develop them."
+        text: "My expertise in Java enables me to build desktop applications.For more low level desktop application requirements, I use JavaFX, to develop them."
     }
         ,
     {

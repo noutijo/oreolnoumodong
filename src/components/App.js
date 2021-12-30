@@ -6,11 +6,11 @@ import Menu from "./Menu";
 import SnackBar from "./SnackBar";
 import Skills from "./Skills";
 import Services from "./Services";
-import Projets from "./Projets";
+import Projects from "./Projects";
 
 function App() {
 
-  return (
+  return ( 
     <div className="center-content">
 
       <Menu />
@@ -18,7 +18,7 @@ function App() {
         <Me />
         <Skills />
         <Services />
-        <Projets />
+        <Projects />
 
       </Container>
       <SnackBar />

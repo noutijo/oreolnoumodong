@@ -1,5 +1,7 @@
 @import "settings";
 
+
+
 * {
   box-sizing: border-box;
 }
@@ -57,6 +59,12 @@
 }
 .green-color {
   color: $greencolor;
+}
+.bg-green-color {
+  background-color: $greencolor;
+}
+.bg-main-color {
+  background-color: $maincolor;
 }
 .text-color {
   color: $textcolor;
