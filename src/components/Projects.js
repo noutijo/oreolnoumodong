@@ -34,7 +34,7 @@ export default function Projects() {
             <Box mt={3} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={1}>
                     <Grid item xs={12} className="center-content-left">
-                        <SectionIconItem className="fontWeight600 fontSize18" icon={porfolio} text={"Projects"} />
+                        <SectionIconItem className="fontWeight600 fontSize18" icon={porfolio} text={"Works"} />
                     </Grid>
                     <Grid item xs={12} className="center-content-left animate__animated animate__slideInUp">
                         <Grid container spacing={1}>

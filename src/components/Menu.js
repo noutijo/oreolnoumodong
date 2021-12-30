@@ -30,7 +30,7 @@ export default function Menu() {
                     <div className="center-content-left" style={{ height: "40px" }} >
 
                         <Link className="center-content" style={{ display: "fkex" }} to="/skills"><MenuItem icon={skills} text={"Skills"} /></Link>
-                        <Link className="center-content" to="/projects"><MenuItem icon={porfolio} text={"Projets"} /></Link>
+                        <Link className="center-content" to="/projects"><MenuItem icon={porfolio} text={"Works"} /></Link>
                         <Link className="center-content" to="/blog"><MenuItem icon={blog} text={"Blog"} /></Link>
 
                     </div>
