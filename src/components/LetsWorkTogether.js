@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
+import {Link} from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 
 import Badge from '@mui/material/Badge';
@@ -42,7 +42,7 @@ export default function LetsWorkTogether() {
         <>
             <Box mt={2} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={1}>
-                    <Grid style={{ display: "block" }} item xs={12}>
+                    <Grid style={{ display: "block" }} className="animate__animated animate__slideInUp" item xs={12}>
                         <Box className="center-content">
                             <span className="fontWeight700 text-color fontSize32">
                                 Let's work together !
@@ -60,8 +60,8 @@ export default function LetsWorkTogether() {
                                 anchorOrigin={{ vertical: 'top-end', horizontal: 'right' }}
                                 variant="dot"
                             >
-                                <Link href="/hire" target="_blank" sx={{ borderRadius: 100 }} pt={0.1} pb={0.1} px={2} className="bg-green-color">
-                                    <span className="text-color fontWeight300 fontSize16">Hire me  <img style={{ width: "13px", height: "13px" }} src={hire} alt="hire icon" /></span>
+                                <Link to="/hire" style={{ borderRadius: 100, padding:"2px 10px 2px 10px" }} className="bg-green-color">
+                                    <span className="text-color fontWeight400 fontSize16">Hire me  <img style={{ width: "13px", height: "13px" }} src={hire} alt="hire icon" /></span>
                                 </Link>
                             </StyledBadge>
                         </Box>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import {Link} from 'react-router-dom';
+import Link from '@mui/material/Link';
 
 import SectionIconItem from './SectionIconItem';
 import SkillItem from './SkillItem';
@@ -13,8 +13,11 @@ import nodejs from "../images/nodejs.svg";
 import java from "../images/java.svg";
 import figma from "../images/figma.svg";
 import photoshop from "../images/photoshop.svg";
+import adobexd from "../images/adobexd.svg";
+import adobeillustrator from "../images/adobeillustrator.svg";
+import aftereffects from "../images/aftereffects.svg";
 
-export default function Skills() {
+export default function FullSkills() {
     const skillsar = [{
         percent: "90%",
         icon: `${reactjsredux}`,
@@ -50,11 +53,29 @@ export default function Skills() {
         icon: `${photoshop}`,
         text: "Photoshop"
     }
+        ,
+    {
+        percent: "97%",
+        icon: `${adobexd}`,
+        text: "Adobe XD"
+    }
+        ,
+    {
+        percent: "83%",
+        icon: `${adobeillustrator}`,
+        text: "Illustrator"
+    }
+        ,
+    {
+        percent: "61%",
+        icon: `${aftereffects}`,
+        text: "After Effects"
+    }
     ];
 
     return (
         <>
-            <Box mt={1} sx={{ flexGrow: 1 }}>
+            <Box mt={10} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={1}>
                     <Grid item xs={12} className="center-content-left">
                         <SectionIconItem className="fontWeight600 fontSize18" icon={skills} text={"Skills"} />
@@ -64,9 +85,6 @@ export default function Skills() {
                             {
                                 skillsar.map((skill, id) => <SkillItem key={id} percent={skill.percent} icon={skill.icon} text={skill.text} />)
                             }
-                            <Grid item xs={12}>
-                                <Link to="/skills" style={{ float: "right" }} className="margin-content-percent"><span className="fontWeight400 white-color">See more</span> </Link>
-                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>

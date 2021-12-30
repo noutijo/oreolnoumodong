@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { Link } from 'react-router-dom';
+import Link from '@mui/material/Link';
 
 import SectionIconItem from './SectionIconItem';
 import ProjectItem from './ProjectItem';
@@ -9,8 +9,11 @@ import porfolio from "../images/porfolio.svg";
 
 import comba from "../images/comba.png";
 import getquote from "../images/getquote.png";
+import noutijo from "../images/noutijo.png";
+import chatesandcaviar from "../images/chatesandcaviar.png";
+import watchoutsite from "../images/watchoutsite.png";
 
-export default function Projects() {
+export default function FullProjects() {
     const projectssar = [{
         img: `${comba}`,
         title: "comba",
@@ -26,12 +29,36 @@ export default function Projects() {
         link: "http://getquote.epizy.com/",
         tags: ["javascript", "html_css"]
     }
+        ,
+    {
+        img: `${watchoutsite}`,
+        title: "watchoutsite ",
+        desc: "watchoutsiteatboston is Web prototype create for an event that shows films can appeal to audiences of all ages.",
+        link: "http://watchoutsiteatboston.epizy.com/",
+        tags: ["html", "css"]
+    }
+        ,
+    {
+        img: `${chatesandcaviar}`,
+        title: "Chalets & Cav",
+        desc: "Chalets & Caviar is a website who show off luxury chalets for sale or rent.",
+        link: "http://mountainschalets.epizy.com/",
+        tags: ["wordpress", "css"]
+    }
+        ,
+    {
+        img: `${noutijo}`,
+        title: "noutijo",
+        desc: "noutijo is my own portfolio built from scratch with a custom design.",
+        link: "http://noutijo.github.io/",
+        tags: ["reactjs", "html_css"]
+    }
 
     ];
 
     return (
         <>
-            <Box mt={3} sx={{ flexGrow: 1 }}>
+            <Box mt={10} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={1}>
                     <Grid item xs={12} className="center-content-left">
                         <SectionIconItem className="fontWeight600 fontSize18" icon={porfolio} text={"Projects"} />
@@ -42,9 +69,6 @@ export default function Projects() {
                                 projectssar.map((project, id) => <ProjectItem key={id} link={project.link} tags={project.tags} title={project.title} img={project.img} desc={project.desc} />)
                             }
                         </Grid>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Link to="/projects" style={{ float: "right" }} className="margin-content-percent"><span className="fontWeight400 white-color">See more</span> </Link>
                     </Grid>
                 </Grid>
             </Box>
