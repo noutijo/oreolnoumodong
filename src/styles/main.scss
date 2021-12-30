@@ -128,9 +128,13 @@ body {
   @include setupFontSize(16px);
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
+  padding: 0;  
+  background-image: radial-gradient(hsla(0,0%,100%,.1) 1px,transparent 0),radial-gradient(hsla(0,0%,100%,.1) 1px,transparent 0);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px;
+  background-attachment: fixed;
 
-  &::before {
+  &::before { 
     content: "";
     @include setupForm(-300px);
     left: 100px;  
