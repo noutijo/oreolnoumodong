@@ -9,6 +9,7 @@ import Home from "./Home";
 import MainProjects from "./MainProjects";
 import MainSkills from "./MainSkills";
 import MainBlog from "./MainBlog";
+import MainHireMe from "./MainHireMe";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/skills" exact element={<MainSkills />} />
           <Route path="/projects" exact element={<MainProjects />} />
           <Route path="/blog" exact element={<MainBlog />} />
+          <Route path="/hire" exact element={<MainHireMe />} />
         </Routes>
       </div>
     </BrowserRouter>
