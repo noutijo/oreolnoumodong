@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Container from '@mui/material/Container';
 import Me from "./Me";
 import SnackBar from "./SnackBar";

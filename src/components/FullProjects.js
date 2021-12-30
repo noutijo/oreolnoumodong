@@ -1,7 +1,6 @@
-import * as React from 'react';
+import { useState } from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
 
 import SectionIconItem from './SectionIconItem';
 import ProjectItem from './ProjectItem';
@@ -13,7 +12,12 @@ import noutijo from "../images/noutijo.png";
 import chatesandcaviar from "../images/chatesandcaviar.png";
 import watchoutsite from "../images/watchoutsite.png";
 
+import porfolioweb from "../images/porfolioweb.svg";
+import porfoliographicdesign from "../images/porfoliographicdesign.svg";
+import behance from "../images/behance.svg";
+
 export default function FullProjects() {
+
     const projectssar = [{
         img: `${comba}`,
         title: "comba",
@@ -56,20 +60,70 @@ export default function FullProjects() {
 
     ];
 
-    return (
-        <>
-            <Box mt={10} sx={{ flexGrow: 1 }}>
-                <Grid container spacing={1}>
-                    <Grid item xs={12} className="center-content-left">
-                        <SectionIconItem className="fontWeight600 fontSize18" icon={porfolio} text={"Works"} />
-                    </Grid>
-                    <Grid item xs={12} className="center-content-left animate__animated animate__slideInUp">
-                        <Grid container spacing={1}>
-                            {
-                                projectssar.map((project, id) => <ProjectItem key={id} link={project.link} tags={project.tags} title={project.title} img={project.img} desc={project.desc} />)
-                            }
+    let [isWeb, setIsWeb] = useState(true);
+
+    let Web = (() => {
+
+        return (<Grid mt={2} item xs={12} className="center-content-left animate__animated animate__slideInUp">
+            <Grid container spacing={1}>
+                {
+                    projectssar.map((project, id) => <ProjectItem key={id} link={project.link} tags={project.tags} title={project.title} img={project.img} desc={project.desc} />)
+                }
+            </Grid>
+        </Grid>)
+    })
+
+    let Design = (() => {
+
+        return (<Grid my={5} item xs={12} className="center-content-left animate__animated animate__slideInUp">
+            <Grid container spacing={1}>
+                <Grid style={{ display: "block" }} item xs={12}>
+                    <Box mt={0.5} className="center-content-left">
+                        <span className="fontWeight300 text-color fontSize16">
+                            Check my behance profile to learn more about my graphic design works.
+                        </span>
+                    </Box>
+                </Grid>
+                <Grid mt={1} item xs={12}>
+                    <Grid container spacing={1}>
+                        <Grid item mt={2} xs={12}>
+                            <Box py={0.5} style={{ borderRadius: 100 }} className="bg-second-color center-content">
+                                <a target="_blank" href="https://www.behance.net/oreolnoumodong">
+                                    <span className="text-color fontWeight400 fontSize16"><img style={{ width: "20px", height: "20px" }} src={behance} alt="behance icon" /> Click to view my graphic design work  </span>
+                                </a>
+                            </Box>
                         </Grid>
                     </Grid>
+                </Grid>
+            </Grid>
+        </Grid>)
+    })
+
+    return (
+        <>
+            <Box mt={13} sx={{ flexGrow: 1 }}>
+                <Grid container spacing={1}>
+                    <Grid item xs={2} className="center-content-left">
+                        <SectionIconItem className="fontWeight600 fontSize18" icon={porfolio} text={"Works"} />
+
+                    </Grid>
+                    <Grid item xs={10} className="center-content-right">
+                        <Box style={{ display: "flex" }}>
+                            <Box onClick={() => setIsWeb(true)} mr={0.5} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer" }} className={`${isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
+                                <span>
+                                    <span className="text-color fontWeight500 fontSize14">Web <img style={{ width: "20px", height: "20px" }} src={porfolioweb} alt="Web icon" /></span>
+                                </span>
+                            </Box>
+                            <Box onClick={() => setIsWeb(false)} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer" }} className={`${!isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
+                                <span>
+                                    <span className="text-color fontWeight500 fontSize14">Graphic Design <img style={{ width: "20px", height: "20px" }} src={porfoliographicdesign} alt="Grapic design icon" /></span>
+                                </span>
+                            </Box>
+                        </Box>
+                    </Grid>
+
+                    {isWeb ? <Web /> : <Design />}
+
                 </Grid>
             </Box>
         </>

@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Container from '@mui/material/Container';
 import FullBlog from "./FullBlog";
 import LetsWorkTogether from "./LetsWorkTogether";
