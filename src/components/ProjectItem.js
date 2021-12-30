@@ -5,11 +5,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
-import DeleteIcon from '@mui/icons-material/Delete';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import SendIcon from '@mui/icons-material/Send';
 import Stack from '@mui/material/Stack';
 import Tag from './Tag';
 
@@ -34,7 +31,7 @@ export default function ProjectItem({ img, link, desc, title, tags }) {
                                 </Link>
                             </Stack>
                         </Box>
-                        <Box mt={1.5} className="text-color text-justify" variant="body2">
+                        <Box mt={1.5} className="text-justify text-color fontWeight300 fontSize16" variant="body2">
                             {desc}
                         </Box>
                     </CardContent>

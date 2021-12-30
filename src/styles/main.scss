@@ -35,6 +35,9 @@
 .fontSize27 {
   @include setupFontSize(27px);
 }
+.fontSize32 {
+  @include setupFontSize(32px);
+}
 
 .fontWeight200 {
   @include setupFontweight(200);

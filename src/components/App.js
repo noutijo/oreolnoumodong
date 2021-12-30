@@ -7,6 +7,8 @@ import SnackBar from "./SnackBar";
 import Skills from "./Skills";
 import Services from "./Services";
 import Projects from "./Projects";
+import LetsWorkTogether from "./LetsWorkTogether";
+import Footer from "./Footer";
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
         <Skills />
         <Services />
         <Projects />
+        <LetsWorkTogether />
+        <Footer />
 
       </Container>
       <SnackBar />
