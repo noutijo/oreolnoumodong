@@ -18,7 +18,6 @@ export default function Home() {
         <Works />
         <LetsWorkTogether />
         <Footer />
-
       </Container>
       <SnackBar />
     </>
