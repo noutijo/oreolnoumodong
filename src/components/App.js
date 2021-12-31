@@ -4,6 +4,7 @@ import {
   Route
 } from "react-router-dom";
 import Menu from "./layouts/Menu";
+import PageNoFound from "./layouts/PageNoFound";
 import Home from "./Home";
 import MainWorks from "./MainWorks";
 import MainSkills from "./MainSkills";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/works" exact element={<MainWorks />} />
           <Route path="/blog" exact element={<MainBlog />} />
           <Route path="/hire" exact element={<MainHireMe />} />
+          <Route path="*" exact element={<PageNoFound />} />
         </Routes>
       </div>
     </BrowserRouter>
