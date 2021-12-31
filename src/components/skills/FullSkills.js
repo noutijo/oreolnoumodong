@@ -1,19 +1,19 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-import SectionIconItem from './SectionIconItem';
+import SectionIconItem from '../layouts/SectionIconItem';
 import SkillItem from './SkillItem';
-import skills from "../images/skills.svg";
+import skills from "../../images/skills.svg";
 
-import reactjsredux from "../images/reactjsredux.svg";
-import javascript from "../images/javascript.svg";
-import nodejs from "../images/nodejs.svg";
-import java from "../images/java.svg";
-import figma from "../images/figma.svg";
-import photoshop from "../images/photoshop.svg";
-import adobexd from "../images/adobexd.svg";
-import adobeillustrator from "../images/adobeillustrator.svg";
-import aftereffects from "../images/aftereffects.svg";
+import reactjsredux from "../../images/reactjsredux.svg";
+import javascript from "../../images/javascript.svg";
+import nodejs from "../../images/nodejs.svg";
+import java from "../../images/java.svg";
+import figma from "../../images/figma.svg";
+import photoshop from "../../images/photoshop.svg";
+import adobexd from "../../images/adobexd.svg";
+import adobeillustrator from "../../images/adobeillustrator.svg";
+import aftereffects from "../../images/aftereffects.svg";
 
 export default function FullSkills() {
     const skillsar = [{

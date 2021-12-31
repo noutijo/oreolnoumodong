@@ -1,8 +1,8 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import SectionIconItem from './SectionIconItem';
-import blog from "../images/blog.svg";
-import noblog from "../images/noblog.svg";
+import SectionIconItem from '../layouts/SectionIconItem';
+import blog from "../../images/blog.svg";
+import noblog from "../../images/noblog.svg";
 
 export default function FullBlog() {
 

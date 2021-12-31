@@ -3,12 +3,12 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Menu from "./Menu";
+import Menu from "./layouts/Menu";
 import Home from "./Home";
-import MainProjects from "./MainProjects";
+import MainWorks from "./MainWorks";
 import MainSkills from "./MainSkills";
 import MainBlog from "./MainBlog";
-import MainHireMe from "./MainHireMe";
+import MainHireMe from "./hire/MainHireMe";
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/skills" exact element={<MainSkills />} />
-          <Route path="/projects" exact element={<MainProjects />} />
+          <Route path="/works" exact element={<MainWorks />} />
           <Route path="/blog" exact element={<MainBlog />} />
           <Route path="/hire" exact element={<MainHireMe />} />
         </Routes>

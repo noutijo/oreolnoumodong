@@ -1,7 +1,7 @@
 import Container from '@mui/material/Container';
-import FullBlog from "./FullBlog";
-import LetsWorkTogether from "./LetsWorkTogether";
-import Footer from "./Footer";
+import FullBlog from "./blog/FullBlog";
+import LetsWorkTogether from "./layouts/LetsWorkTogether";
+import Footer from "./layouts/Footer";
 
 export default function MainBlog() {
 

@@ -1,7 +1,7 @@
 import Container from '@mui/material/Container';
-import FullSkills from "./FullSkills";
-import LetsWorkTogether from "./LetsWorkTogether";
-import Footer from "./Footer";
+import FullSkills from "./skills/FullSkills";
+import LetsWorkTogether from "./layouts/LetsWorkTogether";
+import Footer from "./layouts/Footer";
 
 export default function MainSkills() {
 

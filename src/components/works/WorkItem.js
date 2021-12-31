@@ -9,7 +9,7 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import Stack from '@mui/material/Stack';
 import Tag from './Tag';
 
-export default function ProjectItem({ img, link, desc, title, tags }) {
+export default function WorkItem({ img, link, desc, title, tags }) {
     return (
         <>
             <Grid item xs={12} lg={6} sm={6} >

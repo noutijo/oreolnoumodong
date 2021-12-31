@@ -2,9 +2,9 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-import Footer from "./Footer";
-import upwork from "../images/upwork.svg";
-import email from "../images/email.svg";
+import Footer from "../layouts/Footer";
+import upwork from "../../images/upwork.svg";
+import email from "../../images/email.svg";
 
 export default function MainHireMe() {
 

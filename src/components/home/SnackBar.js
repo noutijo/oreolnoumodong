@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 
-import twitter from "../images/twitter.svg";
+import twitter from "../../images/twitter.svg";
 
 function SnackBar() {
     const [open, setOpen] = React.useState(true);

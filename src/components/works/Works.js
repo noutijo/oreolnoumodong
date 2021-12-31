@@ -2,14 +2,14 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 
-import SectionIconItem from './SectionIconItem';
-import ProjectItem from './ProjectItem';
-import porfolio from "../images/porfolio.svg";
+import SectionIconItem from '../layouts/SectionIconItem';
+import WorkItem from './WorkItem';
+import porfolio from "../../images/porfolio.svg";
 
-import comba from "../images/comba.png";
-import getquote from "../images/getquote.png";
+import comba from "../../images/comba.png";
+import getquote from "../../images/getquote.png";
 
-export default function Projects() {
+export default function Works() {
     const projectssar = [{
         img: `${comba}`,
         title: "comba",
@@ -38,12 +38,12 @@ export default function Projects() {
                     <Grid item xs={12} className="center-content-left animate__animated animate__slideInUp">
                         <Grid container spacing={1}>
                             {
-                                projectssar.map((project, id) => <ProjectItem key={id} link={project.link} tags={project.tags} title={project.title} img={project.img} desc={project.desc} />)
+                                projectssar.map((project, id) => <WorkItem key={id} link={project.link} tags={project.tags} title={project.title} img={project.img} desc={project.desc} />)
                             }
                         </Grid>
                     </Grid>
                     <Grid item xs={12}>
-                        <Link to="/projects" style={{ float: "right" }} className="margin-content-percent"><span className="fontWeight400 white-color">See more</span> </Link>
+                        <Link to="/works" style={{ float: "right" }} className="margin-content-percent"><span className="fontWeight400 white-color">See more</span> </Link>
                     </Grid>
                 </Grid>
             </Box>

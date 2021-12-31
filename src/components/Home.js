@@ -1,11 +1,11 @@
 import Container from '@mui/material/Container';
-import Me from "./Me";
-import SnackBar from "./SnackBar";
-import Skills from "./Skills";
+import Me from "./home/Me";
+import Skills from "./skills/Skills";
 import Services from "./Services";
-import Projects from "./Projects";
-import LetsWorkTogether from "./LetsWorkTogether";
-import Footer from "./Footer";
+import SnackBar from "./home/SnackBar";
+import Works from "./works/Works";
+import LetsWorkTogether from "./layouts/LetsWorkTogether";
+import Footer from "./layouts/Footer";
 
 export default function Home() {
 
@@ -15,7 +15,7 @@ export default function Home() {
         <Me />
         <Skills />
         <Services />
-        <Projects />
+        <Works />
         <LetsWorkTogether />
         <Footer />
 

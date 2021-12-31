@@ -1,10 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
 
-import SectionIconItem from './SectionIconItem';
-import ServicesItem from './ServicesItem';
+import SectionIconItem from './layouts/SectionIconItem';
+import ServicesItem from './services/ServicesItem';
 import services from "../images/services.svg";
 
 import applicationweb from "../images/applicationweb.svg";

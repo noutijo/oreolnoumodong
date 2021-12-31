@@ -1,9 +1,9 @@
 import Container from '@mui/material/Container';
-import FullProjects from "./FullProjects";
-import LetsWorkTogether from "./LetsWorkTogether";
-import Footer from "./Footer";
+import FullProjects from "./works/FullWorks";
+import LetsWorkTogether from "./layouts/LetsWorkTogether";
+import Footer from "./layouts/Footer";
 
-export default function MainProjects() {
+export default function MainWorks() {
 
     return (
         <>

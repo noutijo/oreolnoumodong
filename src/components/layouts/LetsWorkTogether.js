@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 
 import Badge from '@mui/material/Badge';
 
-import hire from "../images/hire.svg";
+import hire from "../../images/hire.svg";
 
 export default function LetsWorkTogether() {
     const StyledBadge = styled(Badge)(({ theme }) => ({

@@ -7,11 +7,11 @@ import Badge from '@mui/material/Badge';
 import Tooltip from '@mui/material/Tooltip';
 import Link from '@mui/material/Link';
 
-import github from "../images/github.svg";
-import gitlab from "../images/gitlab.svg";
-import twitter from "../images/twitter.svg";
-import linkedin from "../images/linkedin.svg";
-import profile from "../images/profile.PNG";
+import github from "../../images/github.svg";
+import gitlab from "../../images/gitlab.svg";
+import twitter from "../../images/twitter.svg";
+import linkedin from "../../images/linkedin.svg";
+import profile from "../../images/profile.PNG";
 
 function Me() {
     const StyledBadge = styled(Badge)(({ theme }) => ({

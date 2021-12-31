@@ -2,21 +2,21 @@ import { useState } from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-import SectionIconItem from './SectionIconItem';
-import ProjectItem from './ProjectItem';
-import porfolio from "../images/porfolio.svg";
+import SectionIconItem from '../layouts/SectionIconItem';
+import ProjectItem from './WorkItem';
+import porfolio from "../../images/porfolio.svg";
 
-import comba from "../images/comba.png";
-import getquote from "../images/getquote.png";
-import noutijo from "../images/noutijo.png";
-import chatesandcaviar from "../images/chatesandcaviar.png";
-import watchoutsite from "../images/watchoutsite.png";
+import comba from "../../images/comba.png";
+import getquote from "../../images/getquote.png";
+import noutijo from "../../images/noutijo.png";
+import chatesandcaviar from "../../images/chatesandcaviar.png";
+import watchoutsite from "../../images/watchoutsite.png";
 
-import porfolioweb from "../images/porfolioweb.svg";
-import porfoliographicdesign from "../images/porfoliographicdesign.svg";
-import behance from "../images/behance.svg";
+import porfolioweb from "../../images/porfolioweb.svg";
+import porfoliographicdesign from "../../images/porfoliographicdesign.svg";
+import behance from "../../images/behance.svg";
 
-export default function FullProjects() {
+export default function FullWorks() {
 
     const projectssar = [{
         img: `${comba}`,
