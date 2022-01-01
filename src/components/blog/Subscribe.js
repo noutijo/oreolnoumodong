@@ -11,10 +11,10 @@ export default function Subscribe() {
 
     const ColorButton = styled(Button)(({ theme }) => ({
         color: "white",
-        backgroundColor: "#4c5261",
+        backgroundColor: "#18967F",
         borderRadius: 100,
         '&:hover': {
-            backgroundColor: "#293041",
+            backgroundColor: "#128570",
         },
     }));
 
@@ -24,7 +24,6 @@ export default function Subscribe() {
                 <Grid container spacing={1}>
                     <Grid my={5} item xs={12} className="center-content-left animate__animated animate__slideInUp">
                         <Grid container spacing={1}>
-
                             <Grid mt={10} item xs={12}>
                                 <Box className="fontWeight300 text-color fontSize16">
                                     <div>
@@ -32,8 +31,15 @@ export default function Subscribe() {
                                     </div>
                                 </Box>
                             </Grid>
-                            <Grid mt={3} item xs={12}>
-                                <Box >
+                            <Grid item xs={12}>
+                                <Box mt={1} className="fontWeight200 text-color fontSize14">
+                                    <div>
+                                        Errors messages will display here...
+                                    </div>
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Box mt={2} >
                                     <Box >
                                         <input type="email" placeholder="Email Address" />
                                     </Box>

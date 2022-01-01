@@ -59,7 +59,7 @@ export default function LetsWorkTogether() {
                                 anchorOrigin={{ vertical: 'top-end', horizontal: 'right' }}
                                 variant="dot"
                             >
-                                <Link to="/hire" style={{ borderRadius: 100, padding:"2px 10px 2px 10px" }} className="bg-green-color">
+                                <Link to="/hire" style={{ borderRadius: 100, padding:"5px 15px 5px 15px" }} className="bg-green-color">
                                     <span className="text-color fontWeight400 fontSize16">Hire me  <img style={{ width: "13px", height: "13px" }} src={hire} alt="hire icon" /></span>
                                 </Link>
                             </StyledBadge>

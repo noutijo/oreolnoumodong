@@ -94,7 +94,7 @@ export default function FullWorks() {
                                     <span style={{ paddingRight: "5px" }} className="center-content">
                                         <img style={{ width: "20px", height: "20px" }} src={behance} alt="behance icon" />
                                     </span>
-                                    <span className="center-content text-color fontWeight400 fontSize16"> Click to view my graphic design work
+                                    <span className="center-content text-color fontWeight400 fontSize16"> Click to view my graphic design works
                                     </span>
                                 </a>
                             </Box>
