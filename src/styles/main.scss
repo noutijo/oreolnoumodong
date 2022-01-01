@@ -103,13 +103,14 @@
 }
 
 .bg-gradient {
-  background: linear-gradient(143.49deg, #ced4e7 6.23%, #8994b4 61.97%);
-}
-
+  background: linear-gradient(-20deg,rgba(30, 35, 49, 0.5) 19.27%,
+    #3a445f 74.24%);
+} 
+ 
 @mixin setupForm($mt) {
   position: fixed;
   width: 600px;
-  height: 382px;
+  height: 382px; 
   top: $mt;
   background: linear-gradient(
     160deg,
