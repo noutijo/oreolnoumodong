@@ -3,13 +3,12 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { styled } from '@mui/material/styles';
-import TextField from '@mui/material/TextField';
 
 import Footer from "../layouts/Footer";
 import LetsWorkTogether from "../layouts/LetsWorkTogether";
 
-
 export default function Subscribe() {
+
     const ColorButton = styled(Button)(({ theme }) => ({
         color: "white",
         backgroundColor: "#4c5261",
@@ -18,6 +17,7 @@ export default function Subscribe() {
             backgroundColor: "#293041",
         },
     }));
+
     return (
         <>
             <Container maxWidth="sm">
@@ -33,14 +33,9 @@ export default function Subscribe() {
                                 </Box>
                             </Grid>
                             <Grid mt={3} item xs={12}>
-                                <Box className="fontWeight300 text-color fontSize16">
-                                    <Box
-                                        sx={{
-                                            width: 500,
-                                            maxWidth: '100%',
-                                        }}
-                                    >
-                                        <TextField fullWidth label="Email Address" id="fullWidth" />
+                                <Box >
+                                    <Box >
+                                        <input type="email" placeholder="Email Address" />
                                     </Box>
                                 </Box>
                             </Grid>
@@ -52,10 +47,12 @@ export default function Subscribe() {
                             <Grid mt={3} item xs={12} >
                                 <LetsWorkTogether />
                             </Grid>
-                            <Grid item xs={12} >
-                                <Footer />
-                            </Grid>
                         </Grid>
+                    </Grid>
+                </Grid>
+                <Grid container spacing={1}>
+                    <Grid item xs={12} >
+                        <Footer />
                     </Grid>
                 </Grid>
             </Container>

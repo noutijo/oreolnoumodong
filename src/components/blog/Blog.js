@@ -43,7 +43,7 @@ export default function Blog() {
                             </div>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} className="">
+                    <Grid item xs={12}>
                         <Box mt={3} >
                             <ColorButton onClick={() => navigate("/subscribe")} variant="contained">Subscribe</ColorButton>
                         </Box>
