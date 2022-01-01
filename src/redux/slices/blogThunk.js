@@ -9,7 +9,7 @@ export const fetchPost = createAsyncThunk(
     async (payload, { rejectWithValue, getState, dispatch }) => {
         try {
             const { data } = await axios.get(
-                "https://jsonplaceholder.typicode.com/posts"
+                "https://jsonplaceholder.typicode.com/photos"
             );
             return data;
         } catch (error) {
@@ -31,10 +31,12 @@ const blogThunk = createSlice({
         [fetchPost.fulfilled]: (state, action) => {
             state.postsList = action.payload;
             state.loading = false;
+            state.noconnexion = false;
         },
         //Handeling rejection
         [fetchPost.rejected]: (state, action) => {
             state.loading = false;
+            state.noconnexion = true;
             state.error = action.payload;
         },
     },

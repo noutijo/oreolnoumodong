@@ -9,7 +9,7 @@ import blog from "../../images/blog.svg";
 
 import Blog from "./Blog";
 import Loading from "./Loading";
-
+import ConnexionError from "./ConnexionError";
 
 
 export default function FullBlog() {
@@ -20,7 +20,13 @@ export default function FullBlog() {
     }, []);
 
     const posts = useSelector((state) => state.post);
-    const { postsList, loading } = posts;
+    const { postsList, loading, noconnexion,error } = posts;
+
+    const hasNoConnexion = () => {
+        if (noconnexion) {
+            return (<><ConnexionError /></>);
+        }
+    };
 
     return (
         <>
@@ -30,8 +36,9 @@ export default function FullBlog() {
                         <SectionIconItem className="fontWeight600 fontSize18" icon={blog} text={"Blog"} />
                     </Grid>
 
-                    {loading ? ( <Loading />) :(<Blog />)}
-                    
+                    {loading===true ? (<Loading />) : (<Blog />)}
+                    {hasNoConnexion}
+                    {error}
                 </Grid>
             </Box>
         </>

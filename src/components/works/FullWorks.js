@@ -122,7 +122,7 @@ export default function FullWorks() {
                                 <span className="text-color fontWeight500 fontSize14">Graphic Design
                                 </span>
                                 <span className="center-content">
-                                    <img style={{ width: "20px", height: "20px" }} src={porfoliographicdesign} alt="Grapic design icon" />
+                                    <img style={{ width: "18px", height: "18px", paddingLeft: "3px" }} src={porfoliographicdesign} alt="Grapic design icon" />
                                 </span>
                             </Link>
                         </Stack>
