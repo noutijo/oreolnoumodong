@@ -89,9 +89,13 @@ export default function FullWorks() {
                 <Grid mt={1} item xs={12}>
                     <Grid container spacing={1}>
                         <Grid item mt={2} xs={12}>
-                            <Box py={0.5} style={{ borderRadius: 100 }} className="bg-second-color center-content">
-                                <a target="_blank" href="https://www.behance.net/oreolnoumodong">
-                                    <span className="text-color fontWeight400 fontSize16"><img style={{ width: "20px", height: "20px" }} src={behance} alt="behance icon" /> Click to view my graphic design work  </span>
+                            <Box py={1} style={{ borderRadius: 100 }} className="bg-second-color center-content">
+                                <a style={{display:"flex"}} target="_blank" href="https://www.behance.net/oreolnoumodong">
+                                    <span style={{ paddingRight: "5px" }} className="center-content">
+                                        <img style={{ width: "20px", height: "20px" }} src={behance} alt="behance icon" />
+                                    </span>
+                                    <span className="center-content text-color fontWeight400 fontSize16"> Click to view my graphic design work
+                                    </span>
                                 </a>
                             </Box>
                         </Grid>
@@ -118,7 +122,7 @@ export default function FullWorks() {
                                     <img style={{ width: "18px", height: "18px", paddingLeft: "3px" }} src={porfolioweb} alt="Web icon" />
                                 </span>
                             </Link>
-                            <Link onClick={() => setIsWeb(false)} py={0.1} px={1} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer",textDecoration:"none" }} className={`${!isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
+                            <Link onClick={() => setIsWeb(false)} py={0.1} px={1} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer", textDecoration: "none" }} className={`${!isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
                                 <span className="text-color fontWeight500 fontSize14">Graphic Design
                                 </span>
                                 <span className="center-content">
