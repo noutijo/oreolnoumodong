@@ -9,6 +9,8 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import Stack from '@mui/material/Stack';
 import Tag from './Tag';
 
+import eye from "../../images/eye.svg";
+
 export default function WorkItem({ img, link, desc, title, tags }) {
     return (
         <>
@@ -25,8 +27,10 @@ export default function WorkItem({ img, link, desc, title, tags }) {
 
                             <Stack direction="row" spacing={1}>
                                 <Box className="fontWeight600 fontSize18">{title}</Box>
-                                <Link href={link} target="_blank" sx={{ borderRadius: 100 }} pt={0.1} pb={0.1} px={1} className="bg-green-color">
-                                    <span className="text-color fontWeight300 fontSize16">Live view <RemoveRedEyeIcon /></span>
+                                <Link href={link} target="_blank" sx={{ borderRadius: 100 }} py={0.1} px={1} className="center-content bg-green-color">
+                                    <span className="text-color fontWeight300 fontSize16">Live view
+                                    </span>
+                                    <span className="center-content"> <img style={{ width: "18px", height: "18px",paddingLeft:"3px" }} src={eye} alt="Grapic design icon" /></span>
                                 </Link>
                             </Stack>
                         </Box>

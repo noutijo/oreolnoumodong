@@ -18,7 +18,7 @@ export default function Menu() {
                 <div style={{ float: "left" }} className="center-content">
 
                     <Link to="/">
-                        <Stack className="center-content circle100 bg-gradient" sx={{ width: 40, height: 40 }} direction="row" spacing={2}>
+                        <Stack style={{ backdropFilter: "blur(8px)"}} className="center-content circle100 bg-gradient" sx={{ width: 40, height: 40 }} direction="row" spacing={2}>
                             <Avatar sx={{ width: 35, height: 35 }} alt="Oreol Noumodong" src={profile} />
                         </Stack>
                     </Link>

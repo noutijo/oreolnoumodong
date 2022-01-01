@@ -31,7 +31,7 @@ export default function LetsWorkTogether() {
                 opacity: 1,
             },
             '100%': {
-                transform: 'scale(3)',
+                transform: 'scale(2.5)',
                 opacity: 0,
             },
         },

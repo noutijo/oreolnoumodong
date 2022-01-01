@@ -140,7 +140,7 @@
 }
 
 .bg-gradient {
-  background: linear-gradient(-20deg, rgba(30, 35, 49, 0.5) 19.27%, #3a445f 74.24%);
+  background: linear-gradient(1deg, rgba(30, 35, 49, 0.5) 19.27%, #3a445f 74.24%);
 }
 
 body {

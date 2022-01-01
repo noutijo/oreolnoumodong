@@ -1,9 +1,11 @@
 import { useState } from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Link from '@mui/material/Link';
 
 import SectionIconItem from '../layouts/SectionIconItem';
-import ProjectItem from './WorkItem';
+import WorkItem from './WorkItem';
 import porfolio from "../../images/porfolio.svg";
 
 import comba from "../../images/comba.png";
@@ -67,7 +69,7 @@ export default function FullWorks() {
         return (<Grid mt={2} item xs={12} className="center-content-left animate__animated animate__slideInUp">
             <Grid container spacing={1}>
                 {
-                    projectssar.map((project, id) => <ProjectItem key={id} link={project.link} tags={project.tags} title={project.title} img={project.img} desc={project.desc} />)
+                    projectssar.map((project, id) => <WorkItem key={id} link={project.link} tags={project.tags} title={project.title} img={project.img} desc={project.desc} />)
                 }
             </Grid>
         </Grid>)
@@ -108,18 +110,22 @@ export default function FullWorks() {
 
                     </Grid>
                     <Grid item xs={10} className="center-content-right">
-                        <Box style={{ display: "flex" }}>
-                            <Box onClick={() => setIsWeb(true)} mr={0.5} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer" }} className={`${isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
-                                <span>
-                                    <span className="text-color fontWeight500 fontSize14">Web <img style={{ width: "20px", height: "20px" }} src={porfolioweb} alt="Web icon" /></span>
+                        <Stack direction="row" spacing={1}>
+                            <Link onClick={() => setIsWeb(true)} py={0.1} px={1} style={{ borderRadius: 100, cursor: "pointer", textDecoration: "none" }} className={`${isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
+                                <span className="text-color fontWeight500 fontSize14">Web
                                 </span>
-                            </Box>
-                            <Box onClick={() => setIsWeb(false)} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer" }} className={`${!isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
-                                <span>
-                                    <span className="text-color fontWeight500 fontSize14">Graphic Design <img style={{ width: "20px", height: "20px" }} src={porfoliographicdesign} alt="Grapic design icon" /></span>
+                                <span className="center-content">
+                                    <img style={{ width: "18px", height: "18px", paddingLeft: "3px" }} src={porfolioweb} alt="Web icon" />
                                 </span>
-                            </Box>
-                        </Box>
+                            </Link>
+                            <Link onClick={() => setIsWeb(false)} py={0.1} px={1} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer",textDecoration:"none" }} className={`${!isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
+                                <span className="text-color fontWeight500 fontSize14">Graphic Design
+                                </span>
+                                <span className="center-content">
+                                    <img style={{ width: "20px", height: "20px" }} src={porfoliographicdesign} alt="Grapic design icon" />
+                                </span>
+                            </Link>
+                        </Stack>
                     </Grid>
 
                     {isWeb ? <Web /> : <Design />}
