@@ -1,10 +1,23 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+
+import { useNavigate } from "react-router-dom";
+
 import noblog from "../../images/noblog.svg";
 
-
-
 export default function Blog() {
+    const ColorButton = styled(Button)(({ theme }) => ({
+        color: "white",
+        backgroundColor: "#4c5261",
+        borderRadius: 100,
+        '&:hover': {
+            backgroundColor: "#293041",
+        },
+    }));
+
+    const navigate  = useNavigate();
 
     return (
         <>
@@ -32,7 +45,7 @@ export default function Blog() {
                     </Grid>
                     <Grid item xs={12} className="">
                         <Box mt={3} >
-                            Textfields
+                            <ColorButton onClick={() => navigate("/subscribe")} variant="contained">Subscribe</ColorButton>
                         </Box>
                     </Grid>
                 </Grid>
