@@ -236,6 +236,7 @@ input[type="password"]:focus {
   background: rgba(41, 48, 65, 0.5);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+  font-family: Karla, sans-serif;
 }
 
 /*Skills*/

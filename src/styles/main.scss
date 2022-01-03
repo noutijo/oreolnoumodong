@@ -164,10 +164,10 @@ input[type="email"],
 input[type="password"] {
   background: transparent;
   box-shadow: none;
-  border-radius:100px;
-  color:$textcolor;
+  border-radius: 100px;
+  color: $textcolor;
   border: 1px solid $thirdcolor;
-  width:100%; 
+  width: 100%;
   padding: 15px 15px 15px 15px;
 }
 
@@ -180,5 +180,5 @@ input[type="password"]:focus {
 }
 
 @import "menu";
-@import "snackbar";
+@import "snackbar"; 
 @import "skills";
