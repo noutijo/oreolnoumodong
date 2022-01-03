@@ -20,7 +20,7 @@ export default function FullBlog() {
     }, []);
 
     const posts = useSelector((state) => state.post);
-    const { postsList, loading, noconnexion,error } = posts;
+    const { loading, noconnexion, error } = posts;
 
     const hasNoConnexion = () => {
         if (noconnexion) {
@@ -36,7 +36,7 @@ export default function FullBlog() {
                         <SectionIconItem className="fontWeight600 fontSize18" icon={blog} text={"Blog"} />
                     </Grid>
 
-                    {loading===true ? (<Loading />) : (<Blog />)}
+                    {loading === true ? (<Loading />) : (<Blog />)}
                     {hasNoConnexion}
                     {error}
                 </Grid>

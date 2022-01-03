@@ -5,7 +5,6 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
 import Link from '@mui/material/Link';
-import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import Stack from '@mui/material/Stack';
 import Tag from './Tag';
 

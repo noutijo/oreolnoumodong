@@ -62,7 +62,7 @@
   color: $greencolor;
 }
 .bg-green-color {
-  background-color: $greencolor;
+  background-color: $greencolor; 
 }
 .bg-main-color {
   background-color: $maincolor;
@@ -176,9 +176,10 @@ input[type="email"]:focus,
 input[type="password"]:focus {
   background: transparent;
   box-shadow: none;
-  outline: 0 none;
+  outline: 0 none; 
 }
-
-@import "menu";
+    
+@import "menu";  
 @import "snackbar"; 
 @import "skills";
+   

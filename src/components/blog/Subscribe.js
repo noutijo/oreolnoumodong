@@ -2,7 +2,6 @@ import { useState } from "react";
 import LoadingButton from '@mui/lab/LoadingButton';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { styled } from '@mui/material/styles';
 
@@ -37,21 +36,12 @@ export default function Subscribe() {
                 setLoading(false);
             }
             if (data.subscriber) {
-                setSuccess("You have succesfully subscribe with you email address " + " " + `${email}`);
+                setSuccess(`You have succesfully subscribe with you email address ${email}`);
             }
         } catch (error) {
             console.log(error);
         }
     };
-
-    const ColorButton = styled(Button)(({ theme }) => ({
-        color: "white",
-        backgroundColor: "#18967F",
-        borderRadius: 100,
-        '&:hover': {
-            backgroundColor: "#128570",
-        },
-    }));
 
     const ColorLoadingButton = styled(LoadingButton)(({ theme }) => ({
         color: "white",

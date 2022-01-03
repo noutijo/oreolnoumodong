@@ -29,7 +29,7 @@ export default function MainHireMe() {
                             <Grid container spacing={1}>
                                 <Grid item mt={2} xs={12} lg={6}>
                                     <Box py={1} style={{ borderRadius: 100 }} className="bg-second-color center-content">
-                                        <a style={{ display: "flex" }} target="_blank" href="https://www.upwork.com/freelancers/~01c3c132268e3d6e1c">
+                                        <a style={{ display: "flex" }} target="_blank" rel="noreferrer" href="https://www.upwork.com/freelancers/~01c3c132268e3d6e1c">
                                             <span className=" center-content text-color fontWeight500 fontSize20">Hire me on Upwork
                                             </span>
                                             <span className="center-content"><img style={{ width: "25px", height: "25px", paddingLeft: "5px" }} src={upwork} alt="upwork icon" />

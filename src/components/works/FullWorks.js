@@ -90,7 +90,7 @@ export default function FullWorks() {
                     <Grid container spacing={1}>
                         <Grid item mt={2} xs={12}>
                             <Box py={1} style={{ borderRadius: 100 }} className="bg-second-color center-content">
-                                <a style={{display:"flex"}} target="_blank" href="https://www.behance.net/oreolnoumodong">
+                                <a style={{display:"flex"}} target="_blank" rel="noreferrer" href="https://www.behance.net/oreolnoumodong">
                                     <span style={{ paddingRight: "5px" }} className="center-content">
                                         <img style={{ width: "20px", height: "20px" }} src={behance} alt="behance icon" />
                                     </span>
@@ -111,18 +111,17 @@ export default function FullWorks() {
                 <Grid container spacing={1}>
                     <Grid item xs={2} className="center-content-left">
                         <SectionIconItem className="fontWeight600 fontSize18" icon={porfolio} text={"Works"} />
-
                     </Grid>
                     <Grid item xs={10} className="center-content-right">
                         <Stack direction="row" spacing={1}>
-                            <Link onClick={() => setIsWeb(true)} py={0.1} px={1} style={{ borderRadius: 100, cursor: "pointer", textDecoration: "none" }} className={`${isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
+                            <Link onClick={() => setIsWeb(true)} py={0.1} px={1} style={{ borderRadius: 100, cursor: "pointer", textDecoration: "none" }} className={`${isWeb ? "bg-green-color center-content" : "bg-second-color center-content"}`}>
                                 <span className="text-color fontWeight500 fontSize14">Web
                                 </span>
                                 <span className="center-content">
                                     <img style={{ width: "18px", height: "18px", paddingLeft: "3px" }} src={porfolioweb} alt="Web icon" />
                                 </span>
                             </Link>
-                            <Link onClick={() => setIsWeb(false)} py={0.1} px={1} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer", textDecoration: "none" }} className={`${!isWeb ? "bg-green-color" : "bg-second-color"}` + " " + "center-content"}>
+                            <Link onClick={() => setIsWeb(false)} py={0.1} px={1} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer", textDecoration: "none" }} className={`${!isWeb ? "bg-green-color center-content" : "bg-second-color center-content"}`}>
                                 <span className="text-color fontWeight500 fontSize14">Graphic Design
                                 </span>
                                 <span className="center-content">

@@ -232,10 +232,8 @@ input[type="password"]:focus {
 }
 
 /*snack bar */
-#root > div > div.MuiSnackbar-root.MuiSnackbar-anchorOriginBottomLeft.animate__animated.animate__slideInDown.css-cpgvjg-MuiSnackbar-root > div {
-  background: rgba(41, 48, 65, 0.5);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+/*div > div.MuiSnackbar-root.MuiSnackbar-anchorOriginBottomLeft.animate__animated.animate__slideInDown.css-cpgvjg-MuiSnackbar-root > div*/
+.MuiPaper-root {
   font-family: Karla, sans-serif;
 }
 
