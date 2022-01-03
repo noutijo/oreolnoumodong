@@ -1,10 +1,10 @@
 import { useState } from "react";
+import LoadingButton from '@mui/lab/LoadingButton';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { styled } from '@mui/material/styles';
-import LoadingButton from '@mui/lab/LoadingButton';
 
 import Footer from "../layouts/Footer";
 import LetsWorkTogether from "../layouts/LetsWorkTogether";
@@ -16,15 +16,11 @@ export default function Subscribe() {
     const [email, setEmail] = useState("");
     const [emailError, setEmailError] = useState("");
 
-    function handleLoadingClick() {
-        setLoading(true);
-    }
-
     const submitHandler = async () => {
 
         setEmailError("");
         setSuccess("");
-
+        setLoading(true);
         try {
             const res = await fetch("https://oreolnoumodong-server.herokuapp.com/subscriber", {
                 method: "POST",
@@ -35,8 +31,10 @@ export default function Subscribe() {
 
             const data = await res.json();
             console.log(data);
+            setLoading(false);
             if (data.errors) {
                 setEmailError(data.errors.email);
+                setLoading(false);
             }
             if (data.subscriber) {
                 setSuccess("You have succesfully subscribe with you email address " + " " + `${email}`);
@@ -47,6 +45,15 @@ export default function Subscribe() {
     };
 
     const ColorButton = styled(Button)(({ theme }) => ({
+        color: "white",
+        backgroundColor: "#18967F",
+        borderRadius: 100,
+        '&:hover': {
+            backgroundColor: "#128570",
+        },
+    }));
+
+    const ColorLoadingButton = styled(LoadingButton)(({ theme }) => ({
         color: "white",
         backgroundColor: "#18967F",
         borderRadius: 100,
@@ -70,7 +77,7 @@ export default function Subscribe() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={1} className="fontWeight600 text-color fontSize16">
-                                    <div style={{ color: "red" }}>
+                                    <div style={{ color: "#db4e4e" }}>
                                         {emailError}
                                     </div>
                                     <div className="green-color fontWeight600">
@@ -91,15 +98,11 @@ export default function Subscribe() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={3} >
-                                    <ColorButton onClick={(e) => submitHandler()} variant="contained">Subscribe</ColorButton>
-                                    <LoadingButton
-                                        onClick={handleLoadingClick}
+                                    <ColorLoadingButton
+                                        onClick={(e) => submitHandler()}
                                         loading={loading}
-                                        loadingIndicator="Loading..."
-                                        variant="outlined"
-                                    >
-                                        Fetch data
-                                    </LoadingButton>
+                                        disabled={loading}
+                                    >Subscribe</ColorLoadingButton>
                                 </Box>
                             </Grid>
                             <Grid mt={3} item xs={12} >
