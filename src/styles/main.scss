@@ -1,0 +1,189 @@
+@import "settings";
+
+* {
+  box-sizing: border-box;
+}
+
+p{
+  line-height: 22px;
+}
+
+/*font setup*/
+@mixin setupFontSize($s) {
+  font-size: $s;
+}
+@mixin setupFontweight($s) {
+  font-weight: $s;
+}
+
+.fontSize12 {
+  @include setupFontSize(12px);
+}
+.fontSize14 {
+  @include setupFontSize(14px);
+}
+.fontSize16 {
+  @include setupFontSize(16px);
+}
+.fontSize18 {
+  @include setupFontSize(18px);
+}
+.fontSize20 {
+  @include setupFontSize(20px);
+}
+.fontSize24 {
+  @include setupFontSize(24px);
+}
+.fontSize27 {
+  @include setupFontSize(27px);
+}
+.fontSize32 {
+  @include setupFontSize(32px);
+}
+
+.fontWeight200 {
+  @include setupFontweight(200);
+}
+.fontWeight300 {
+  @include setupFontweight(300);
+}
+.fontWeight400 {
+  @include setupFontweight(400);
+}
+.fontWeight500 {
+  @include setupFontweight(500);
+}
+.fontWeight600 {
+  @include setupFontweight(600);
+}
+.fontWeight700 {
+  @include setupFontweight(700);
+}
+.text-justify {
+  text-align: justify;
+}
+.green-color {
+  color: $greencolor;
+}
+.bg-green-color {
+  background-color: $greencolor; 
+}
+.bg-main-color {
+  background-color: $maincolor;
+}
+.bg-second-color {
+  background-color: $secondcolor;
+}
+.text-color {
+  color: $textcolor;
+}
+.white-color {
+  color: white;
+}
+
+@mixin centerSetup() {
+  display: flex;
+  align-items: center;
+  height: auto;
+  box-sizing: border-box;
+}
+.center-content {
+  @include centerSetup;
+  justify-content: center;
+}
+.center-content-left {
+  @include centerSetup;
+  justify-content: left;
+}
+.center-content-right {
+  @include centerSetup;
+  justify-content: right;
+}
+
+.circle100 {
+  border-radius: 100px;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    1deg,
+    rgba(30, 35, 49, 0.5) 19.27%,
+    #3a445f 74.24%
+  );
+}
+
+@mixin setupForm($mt) {
+  position: fixed;
+  width: 600px;
+  height: 382px;
+  top: $mt;
+  background: linear-gradient(
+    160deg,
+    rgba(30, 35, 49, 0.5) 19.27%,
+    #3a445f 74.24%
+  );
+  border-radius: 200px;
+  transform: rotate(-36deg);
+  z-index: -1;
+}
+
+body {
+  background-color: $maincolor;
+  color: $textcolor;
+  font-family: $myFont;
+  @include setupFontSize(16px);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0.1) 1px, transparent 0),
+    radial-gradient(hsla(0, 0%, 100%, 0.1) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  background-attachment: fixed;
+
+  &::before {
+    content: "";
+    @include setupForm(-300px);
+    left: 100px;
+  }
+
+  &::after {
+    content: "";
+    @include setupForm(100px);
+    right: -350px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: $myFont;
+  &:hover {
+    color: white;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 100px;
+  color: $textcolor;
+  border: 1px solid $thirdcolor;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background: transparent;
+  box-shadow: none;
+  outline: 0 none; 
+}
+    
+@import "menu";  
+@import "snackbar"; 
+@import "skills";
+   
