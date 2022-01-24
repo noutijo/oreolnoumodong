@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+p {
+  line-height: 22px;
+}
+
 /*font setup*/
 .fontSize12 {
   font-size: 12px;

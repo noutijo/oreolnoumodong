@@ -34,7 +34,7 @@ export default function WorkItem({ img, link, desc, title, tags }) {
                             </Stack>
                         </Box>
                         <Box mt={1.5} className="text-justify text-color fontWeight300 fontSize16" variant="body2">
-                            {desc}
+                           <p> {desc} </p>
                         </Box>
                     </CardContent>
                     <CardActions>

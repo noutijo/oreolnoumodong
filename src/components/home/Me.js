@@ -8,9 +8,10 @@ import Tooltip from '@mui/material/Tooltip';
 import Link from '@mui/material/Link';
 
 import github from "../../images/github.svg";
-import gitlab from "../../images/gitlab.svg";
 import twitter from "../../images/twitter.svg";
 import linkedin from "../../images/linkedin.svg";
+import dribbble from "../../images/dribbble.svg";
+import behance from "../../images/behance.svg";
 import profile from "../../images/profile.PNG";
 
 function Me() {
@@ -72,19 +73,20 @@ function Me() {
                             </div>
                         </Grid>
                     </Grid>
-                    <Grid mt={2} item xs={12}>
+                    <Grid mt={0} item xs={12}>
 
                         <p className="fontWeight300 fontSize16 text-justify">
-                            Welcome, I’m Software engineer, Front-end developer (ReactJs), Ui/Ux designer  who received a training grant from <Link href="http://meta.com/" target="_blank"><span className="fontWeight600 white-color">@Meta</span></Link> for front-end web development training at <Link href="https://openclassrooms.com/" target="_blank"><span className="fontWeight600 white-color">@OpenClassrooms</span></Link>. <Link href="https://twitter.com/nooutidev" target="_blank"><span className="fontWeight600 green-color">@nooutidev</span></Link> Founder.
+                            Welcome, I’m Software engineer, Front-end developer (ReactJs), Ui/Ux designer  who received a training grant from <Link href="http://meta.com/" target="_blank"><span className="fontWeight600 white-color">@Meta</span></Link> for front-end web development training at <Link href="https://openclassrooms.com/" target="_blank"><span className="fontWeight600 white-color">@OpenClassrooms</span></Link>. Building <Link href="https://twitter.com/nooutidev" target="_blank"><span className="fontWeight600 green-color">@nooutidev</span></Link>.
                         </p>
                     </Grid>
-                    <Grid item xs={12}>
-                    <p>
+                    <Grid mb={2} item xs={12}>
+                    <span>
                         <Link href="https://github.com/noutijo" target="_blank"><img style={{ with: "23px", height: "17px" }} src={github} alt="github icon" /></Link>
-                        <Link ml={1.5} href="https://gitlab.com/oreolnoumodong" target="_blank"><img style={{ with: "22px", height: "16px" }} src={gitlab} alt="gitlab icon" /></Link>
                         <Link ml={1.5} href="https://twitter.com/JuniorOreol" target="_blank"><img style={{ with: "22px", height: "16px" }} src={twitter} alt="twitter icon" /></Link>
-                        <Link ml={1.5} href="https://www.linkedin.com/in/oreolnoumodong/" target="_blank"><img style={{ with: "27px", height: "21px" }} src={linkedin} alt="linkedin icon" /></Link>
-                    </p>
+                        <Link ml={1.5} href="https://www.linkedin.com/in/oreolnoumodong" target="_blank"><img style={{ with: "27px", height: "21px" }} src={linkedin} alt="linkedin icon" /></Link>
+                            <Link ml={1.5} href="https://www.behance.net/oreolnoumodong" target="_blank"><img style={{ with: "22px", height: "16px" }} src={behance} alt="gitlab icon" /></Link>
+                            <Link ml={1.5} href="https://dribbble.com/oreolnoumodong" target="_blank"><img style={{ with: "25px", height: "19px" }} src={dribbble} alt="gitlab icon" /></Link>
+                    </span>
                     </Grid>
                 </Grid>
             </Box>

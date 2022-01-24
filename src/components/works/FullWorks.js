@@ -115,14 +115,14 @@ export default function FullWorks() {
                     <Grid item xs={10} className="center-content-right">
                         <Stack direction="row" spacing={1}>
                             <Link onClick={() => setIsWeb(true)} py={0.1} px={1} style={{ borderRadius: 100, cursor: "pointer", textDecoration: "none" }} className={`${isWeb ? "bg-green-color center-content" : "bg-second-color center-content"}`}>
-                                <span className="text-color fontWeight500 fontSize14">Web
+                                <span className="text-color fontWeight500 fontSize14">Web/Desktop
                                 </span>
                                 <span className="center-content">
                                     <img style={{ width: "18px", height: "18px", paddingLeft: "3px" }} src={porfolioweb} alt="Web icon" />
                                 </span>
                             </Link>
                             <Link onClick={() => setIsWeb(false)} py={0.1} px={1} style={{ borderRadius: 100, padding: "2px 10px 2px 10px", cursor: "pointer", textDecoration: "none" }} className={`${!isWeb ? "bg-green-color center-content" : "bg-second-color center-content"}`}>
-                                <span className="text-color fontWeight500 fontSize14">Graphic Design
+                                <span className="text-color fontWeight500 fontSize14">Design
                                 </span>
                                 <span className="center-content">
                                     <img style={{ width: "18px", height: "18px", paddingLeft: "3px" }} src={porfoliographicdesign} alt="Grapic design icon" />

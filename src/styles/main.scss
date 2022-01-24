@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+p{
+  line-height: 22px;
+}
+
 /*font setup*/
 @mixin setupFontSize($s) {
   font-size: $s;
