@@ -21,6 +21,7 @@ import transip from "../../images/transip.png";
 import chat from "../../images/chat.png";
 import timetable from "../../images/timetable.png";
 import votingapp from "../../images/votingapp.png";
+import eateryapp from "../../images/eateryapp.png";
 
 export default function FullWorks() {
 
@@ -58,6 +59,15 @@ export default function FullWorks() {
         link: "https://youtu.be/7Lsckb7YThk",
         githublink: "https://github.com/noutijo/chat",
         tags: ["java", "javafx"]
+    }
+        ,
+    {
+        img: `${eateryapp}`,
+        title: "eatery ",
+        desc: "eatery note is a simple service that provides reviews of restaurants around you.",
+        link: "https://eatery-note.netlify.app/",
+        githublink: "https://github.com/noutijo/eatery-app",
+        tags: ["javascript", "google api"]
     }
         ,
     {
