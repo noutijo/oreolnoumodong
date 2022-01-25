@@ -39,7 +39,7 @@ function SnackBar() {
                         </IconButton>
                     </Grid>
                     <Grid sx={{ bgcolor:"transparent" }} item xs={12}>
-                        <p className="text-justify fontWeight300">I am currently improving my knowledge on back-end technologies (MongoDB, Node.js and Express.js).</p>
+                        <span className="text-justify fontWeight300">I am currently improving my knowledge on back-end technologies (MongoDB, Node.js and Express.js).</span>
                     </Grid>
                 </Grid>
             </Box>
