@@ -159,7 +159,7 @@ export default function FullWorks() {
                     </Grid>
                     <Grid item xs={10} className="center-content-right">
                         <Stack direction="row" spacing={1}>
-                            <Link onClick={() => setIsWeb(true)} py={0.1} px={1} style={{ borderRadius: 100, cursor: "pointer", textDecoration: "none" }} className={`${isWeb ? "bg-green-color center-content" : "bg-second-color center-content"}`}>
+                            <Link onClick={() => setIsWeb(true)} py={0.1} px={0.7} style={{ borderRadius: 100, cursor: "pointer", textDecoration: "none" }} className={`${isWeb ? "bg-green-color center-content" : "bg-second-color center-content"}`}>
                                 <span className="text-color fontWeight500 fontSize14">Web/Desktop
                                 </span>
                                 <span className="center-content">

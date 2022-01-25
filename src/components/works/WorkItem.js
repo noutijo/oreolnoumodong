@@ -32,9 +32,10 @@ export default function WorkItem({ img, link, githublink, desc, title, tags }) {
                                     </span>
                                     <span className="center-content"> <img style={{ width: "18px", height: "18px", paddingLeft: "3px" }} src={eye} alt="Grapic design icon" /></span>
                                 </Link>
+                                
                                 {
                                     githublink ? <Link href={githublink} target="_blank" sx={{ borderRadius: 100 }} py={0.1} px={1} className="center-content bg-second-color">
-                                        <span className="center-content"> <img style={{ width: "18px", height: "18px", paddingLeft: "3px" }} src={github} alt="github icon" /></span>
+                                        <span className="center-content"> <img style={{ width: "22px", height: "22px", paddingLeft: "3px" }} src={github} alt="github icon" /></span>
                                     </Link> : ""
                                 }
 

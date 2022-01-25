@@ -18,6 +18,10 @@ import thinking from "../../images/thinking.svg";
 import mysql from "../../images/mysql.svg";
 import mongodb from "../../images/mongodb.svg";
 import wordpress from "../../images/wordpress.svg";
+import bootstrap from "../../images/bootstrap.svg";
+import materialui from "../../images/materialui.svg";
+import sass from "../../images/sass.svg";
+import php from "../../images/php.svg";
 
 export default function FullSkills() {
     const skillsar = [{
@@ -51,6 +55,12 @@ export default function FullSkills() {
     }
         ,
     {
+        percent: "21%",
+        icon: `${php}`,
+        text: "PHP"
+    }
+        ,
+    {
         percent: "62%",
         icon: `${java}`,
         text: "Java + javafx"
@@ -60,6 +70,24 @@ export default function FullSkills() {
         percent: "79%",
         icon: `${wordpress}`,
         text: "Wordpress"
+    }
+        ,
+    {
+        percent: "83%",
+        icon: `${materialui}`,
+        text: "Material-UI"
+    }
+        ,
+    {
+        percent: "95%",
+        icon: `${bootstrap}`,
+        text: "Bootstrap"
+    }
+        ,
+    {
+        percent: "93%",
+        icon: `${sass}`,
+        text: "Sass"
     }
         ,
     {
@@ -93,7 +121,7 @@ export default function FullSkills() {
     }
         ,
     {
-        percent: "61%",
+        percent: "53%",
         icon: `${aftereffects}`,
         text: "After Effects"
     }
