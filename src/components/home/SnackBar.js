@@ -22,13 +22,13 @@ function SnackBar() {
     const message = (
         <>
             <Box style={{ width: "300px" }} sx={{ flexGrow: 1, bgcolor: "transparent" }}>
-                <Grid  container spacing={2}>
-                    <Grid sx={{ bgcolor:"transparent" }} item xs={10} >
+                <Grid  container>
+                    <Grid sx={{ bgcolor:"transparent" }} item xs={11} >
                         <Link href="https://twitter.com/JuniorOreol" target="_blank">
                             <img style={{ with: "22px", height: "16px" }} src={twitter} alt="twitter icon" /> <span className="fontWeight600 white-color">@JuniorOreol</span>
                     </Link>
                     </Grid>
-                    <Grid sx={{ bgcolor:"transparent" }} item xs={2}>
+                    <Grid sx={{ bgcolor:"transparent" }} item xs={1}>
                         <IconButton
                             size="small"
                             aria-label="close"
@@ -39,7 +39,7 @@ function SnackBar() {
                         </IconButton>
                     </Grid>
                     <Grid sx={{ bgcolor:"transparent" }} item xs={12}>
-                        <span className="text-justify fontWeight300">I am currently improving my knowledge on back-end technologies (MongoDB, Node.js and Express.js).</span>
+                        <p className="text-justify fontWeight300">I am currently improving my knowledge on back-end technologies (MongoDB, Node.js and Express.js).</p>
                     </Grid>
                 </Grid>
             </Box>
@@ -52,7 +52,7 @@ function SnackBar() {
                 sx={{
                     '& .MuiPaper-root': {
                         bgcolor: 'rgba(41, 48, 65,0.5)',
-                        backdropFilter: "blur(8px)"
+                        backdropFilter: "blur(8px)",
                     } }}
                 className="animate__animated animate__slideInDown bg-snackbar"
                 open={open}

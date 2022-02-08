@@ -76,7 +76,7 @@ function Me() {
                     <Grid mt={0} item xs={12}>
 
                         <p className="fontWeight300 fontSize16 text-justify">
-                            Welcome, I’m Software engineer, Front-end developer (ReactJs), Ui/Ux designer  who received a training grant from <Link href="http://meta.com/" target="_blank"><span className="fontWeight600 white-color">@Meta</span></Link> for front-end web development training at <Link href="https://openclassrooms.com/" target="_blank"><span className="fontWeight600 white-color">@OpenClassrooms</span></Link>. Building <Link href="https://twitter.com/nooutidev" target="_blank"><span className="fontWeight600 green-color">@nooutidev</span></Link>.
+                            Welcome, I’m Software engineer, Front-end developer (ReactJs, Vue.js), Java Developer, Ui/Ux designer with more than 3 years of experience. I received a training grant from <Link href="http://meta.com/" target="_blank"><span className="fontWeight600 white-color">@Meta</span></Link> for front-end web development training at <Link href="https://openclassrooms.com/" target="_blank"><span className="fontWeight600 white-color">@OpenClassrooms</span></Link>. Building <Link href="https://twitter.com/nooutidev" target="_blank"><span className="fontWeight600 green-color">@nooutidev</span></Link>.
                         </p>
                     </Grid>
                     <Grid mb={2} item xs={12}>
