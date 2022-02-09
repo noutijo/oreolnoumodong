@@ -22,12 +22,19 @@ import bootstrap from "../../images/bootstrap.svg";
 import materialui from "../../images/materialui.svg";
 import sass from "../../images/sass.svg";
 import php from "../../images/php.svg";
+import vuejs from "../../images/vuejs.svg";
 
 export default function FullSkills() {
     const skillsar = [{
         percent: "90%",
         icon: `${reactjsredux}`,
         text: "ReactJs + Redux"
+    }
+        ,
+    {
+        percent: "53%",
+        icon: `${vuejs}`,
+        text: "Vue.js"
     }
         ,
     {

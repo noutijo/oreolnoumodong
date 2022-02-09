@@ -14,12 +14,19 @@ import java from "../../images/java.svg";
 import figma from "../../images/figma.svg";
 import photoshop from "../../images/photoshop.svg";
 import thinking from "../../images/thinking.svg";
+import vuejs from "../../images/vuejs.svg";
 
 export default function Skills() {
     const skillsar = [{
         percent: "90%",
         icon: `${reactjsredux}`,
         text: "ReactJs + Redux"
+    }
+        ,
+    {
+        percent: "53%",
+        icon: `${vuejs}`,
+        text: "Vue.js"
     }
         ,
     {
