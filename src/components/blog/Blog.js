@@ -42,6 +42,7 @@ export default function Blog() {
                                 However, you can subscribe when blog will ready we'll send you a little notification !
                             </div>
                         </Box>
+                        
                     </Grid>
                     <Grid item xs={12}>
                         <Box mt={3} >
@@ -53,4 +54,3 @@ export default function Blog() {
         </>
     );
 }
-
