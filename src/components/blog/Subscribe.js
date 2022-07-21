@@ -21,7 +21,7 @@ export default function Subscribe() {
         setSuccess("");
         setLoading(true);
         try {
-            const res = await fetch("https://oreolnoumodong-server.herokuapp.com/subscriber", {
+            const res = await fetch("YOUR_API_TO RECEIVING_EMAIL_ADDRESS", {
                 method: "POST",
                 credentials: "include",
                 body: JSON.stringify({ email }),
